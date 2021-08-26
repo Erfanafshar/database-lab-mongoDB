@@ -1,0 +1,14 @@
+2.1) use School
+2.2) show dbs
+2.3) db.createcollection('Student')
+2.3) db.createcollection('Courses')
+2.4) show collections
+3.1) db.Student.insert(
+	{name: "erf", last_name: "afs", age: 22, degree:{university: "AUT", major: "CE", minor:"AI", gpa: 1.00}, address: {country: "IR", city: "Teh", street: "Izad"}})
+3.1) db.Student.insert(
+	{name: "erfan", last_name: "afshar", age: 23, degree:{university: "Amirkabir", major: "computer engineering", minor:"artificial intelligence", gpa: 2.00},
+	address: {country: "Iran", city: "Tehran", street: "Safa"}})
+4) db.Courses.drop()
+5.1) db.Student.find().pretty()
+5.2) db.Student.update({name: "erf"}, {$inc: {age: 3}})
+5.3) db.Student.update({name: "erfan"}, {$unset: {age: 1}})

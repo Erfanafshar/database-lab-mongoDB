@@ -1,0 +1,7 @@
+6) db.zips.find({"city": "SHELTON"})
+7) db.zips.find({"city": "SHELTON"}).sort({"pop": -1})
+8) db.zips.find({"city": "SHELTON"}, {"state": 1}).sort({"pop": -1}).limit(1)
+9) db.zips.find({}, {"city": 1, "pop": 1}).sort({"pop": -1}).limit(10)
+10) db.zips.find({$or: [{pop : {$lt: 100}}, {pop: {$gt: 100000}}]})
+11) db.zips.find({"state": "NY"}).count()
+
